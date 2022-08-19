@@ -1,0 +1,101 @@
+{ 
+    "type":"message",
+    "attachments":[
+    {
+    "contentType":"application/vnd.microsoft.card.adaptive",
+    "contentUrl":null,
+    "content":
+    {
+        "type": "AdaptiveCard",
+        "msTeams": { "width": "full" },
+        "body": [
+            {
+                "type": "ColumnSet",
+                "columns": [
+                    {
+                        "type": "Column",
+                        "items": [
+                            {
+                                "type": "Image",
+                                "style": "ImageStyle",
+                                "url": " http://solarone.me/wp-content/uploads/2016/05/cropped-SolarOne-Sun-Logo-512.jpg ",
+                                "size": "Medium"
+                            }
+                        ],
+                        "width": "auto"
+                    },
+                    {
+                        "type": "Column",
+                        "items": [
+                            {
+                                "type": "TextBlock",
+                                "weight": "Bolder",
+                                "text": " Date and Time: 2019-09-07T-15:50+00",
+                                "wrap": true
+                            },
+                            {
+                                "type": "TextBlock",
+                                "spacing": "None",
+                                "text": "Recieved July 4th",
+                                "isSubtle": true,
+                                "wrap": true
+                            }
+                        ],
+                        "width": "stretch"
+                    }
+                ]
+            },
+            {
+                "type": "FactSet",
+                "facts": [
+                    {
+                        "title": "Message:",
+                        "value": "Have a great Friday!",
+                        "wrap": true
+                    }
+                ]
+            }
+        ],
+        "actions": [
+            {
+                "type": "Action.ShowCard",
+                "title": "Add a comment",
+                "card": {
+                    "type": "AdaptiveCard",
+                    "body": [
+                        {
+                            "type": "Input.Text",
+                            "id": "comment",
+                            "placeholder": "Add a comment",
+                            "isMultiline": true
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "type": "Action.Submit",
+                            "title": "OK"
+                        }
+                    ],
+                    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+                }
+            },
+            {
+                "type": "Action.ShowCard",
+                "title": "Details",
+                "card": {
+                    "type": "AdaptiveCard",
+                    "body": [
+                        {
+                        "type": "TextBlock",
+                        "text": "Things to Do:",
+                        "wrap": "True"
+                        }
+                    ]
+                }
+            }
+        ],
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "version": "1.5"
+    }
+        }]
+    }
